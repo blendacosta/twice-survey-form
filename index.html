@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TWICE Survey Form</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Silkscreen&family=Sono:wght@400;500&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <h1 id="title">TWICE Survey Form</h1>
+  <p id="description">Thanks <span class="once">ONCE</span> for supporting the girls</p>
+
+  <form id="survey-form">
+    <fieldset>
+      <label id="name-label" for="name" class="question">Name</label>
+      <input type="text" id="name" placeholder="Enter your name" required>
+    </fieldset>
+
+    <fieldset>
+      <label id="email-label" for="email" class="question">Email</label>
+      <input type="email" name="email" id="email" placeholder="Enter your email" required>
+    </fieldset>
+
+    <fieldset>
+      <label id="number-label" for="number" class="question">Age</label>
+      <input type="number" name="age" id="number" min="13" max="120" placeholder="Enter your age" required>
+    </fieldset>
+
+    <fieldset>
+      <label for="dropdown" class="question">Which TWICE member is your favorite?</label>
+      <select name="age" id="dropdown" required>
+        <option value="None">Select a member</option>
+        <option value="1">Nayeon</option>
+        <option value="2">Jeongyeon</option>
+        <option value="3">Momo</option>
+        <option value="4">Sana</option>
+        <option value="5">Jihyo</option>
+        <option value="6">Mina</option>
+        <option value="7">Dahyun</option>
+        <option value="8">Chaeyoung</option>
+        <option value="9">Tzuyu</option>
+        <option value="10">OT9</option>
+      </select>
+    </fieldset>
+
+    <fieldset>
+      <label for="year-once" class="question">What year did you become an <span class="once">ONCE</span>?</label>
+      <label for="15-17"></label><input type="radio" value="15-17" name="year-once" id="15-17" class="inline"
+        required>2015-2017</label>
+      <label for="18-20"></label><input type="radio" value="18-20" name="year-once" id="18-20" class="inline"
+        required>2018-2020</label>
+      <label for="21-23"></label><input type="radio" value="21-23" name="year-once" id="21-23" class="inline"
+        required>2021-2023</label>
+      <label for="other"></label><input type="radio" value="other" name="year-once" id="other" class="inline"
+        required>Other</label>
+    </fieldset>
+
+    <fieldset>
+      <label for="discover" class="question">How did you discover <span class="twice">TWICE</span>? (check all that
+        apply)</label>
+      <label for="music-video"></label><input type="checkbox" value="music-video" name="discover" id="music-video"
+        class="inline" required>Through a
+      music video on
+      YouTube</label>
+      <label for="variety-show"><input type="checkbox" value="variety-show" name="discover" id="variety-show"
+          class="inline" required>Through
+        a Korean
+        variety show (ex: Running Man, Weekly Idol, Knowing Bros, etc.)</label>
+      <label for="friend"></label><input type="checkbox" value="friend" name="discover" id="friend" class="inline"
+        required>Through a
+      friend/family member who is a fan</label>
+      <label for="social-media"></label><input type="checkbox" value="social-media" name="discover" id="social-media"
+        class="inline" required>Through
+      social media (ex: Instagram, Twitter, Facebook, TikTok, etc.)</label>
+      <label for="live-performance"></label><input type="checkbox" value="live-performance" name="discover"
+        id="live-performance" class="inline" required>Through a live performance (ex: concerts, award shows,
+      etc.)</label>
+      <label for="other"></label><input type="checkbox" value="other" name="discover" id="other" class="inline"
+        required>Through other
+      sources</label>
+    </fieldset>
+
+    <fieldset>
+      <label for="twice" class="question">What is <span class="twice">TWICE</span> for you?</label>
+      <textarea name="twice" id="twice" cols="40" rows="10" required></textarea>
+    </fieldset>
+    <input id="submit" type="submit" value="submit">
+  </form>
+</body>
+
+</html>
